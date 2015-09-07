@@ -953,8 +953,7 @@ final class ColorInterval implements Comparable<ColorInterval> {
     }
 
     /**
-     * Prüft ob eine gegebene Histogrammposition von diesem Intervall erfasst wird oder nicht.
-     * @return true wenn der Wert im Intervall liegt, false anderenfalls
+     * checks if a given index is within the boundaries of the interval, returns true or false.
      */
     boolean includes(int index) {
         return index >= begin && index <= end;
